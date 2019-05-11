@@ -21,13 +21,10 @@ deal = Deal()
 stock = Stock()
 dingding = DingDing()
 
-# 定时任务配置
+# 定时任务
 app.conf.update(
-    # # 默认交换机名字为tasks
     # CELERY_DEFAULT_EXCHANGE = 'tasks',
-    # 交换类型是topic
     CELERY_DEFAULT_EXCHANGE_TYPE='topic',
-    # 默认的路由键是task.default
     CELERY_DEFAULT_ROUTING_KEY='default',
     CELERY_DEFAULT_EXCHANGE='default',
     CELERY_DEFAULT_QUEUE='default',
