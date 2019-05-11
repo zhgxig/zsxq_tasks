@@ -1,2 +1,2 @@
 # zsxq_tasks
-leaning and using
+learning and using
