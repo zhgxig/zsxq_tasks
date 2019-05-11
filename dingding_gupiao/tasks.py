@@ -44,7 +44,7 @@ app.conf.update(
     CELERYBEAT_SCHEDULE={
         "warning_gupiao": {
             "task": "tasks.warning_gupiao",
-            "schedule": crontab(minute="*/1", hour="1-23")
+            "schedule": crontab(minute="*/120", hour="1-7")
         }
     })
 
